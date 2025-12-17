@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idola Clinics | Medicina Estética</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#D4AF37', // Metallic Gold
+                dim: '#AA8C2C',
+                light: '#F3E5AB',
+              },
+              dark: {
+                DEFAULT: '#0A0A0A', // Deep Black
+                surface: '#121212', // Off-black
+                lighter: '#1E1E1E',
+              },
+              light: {
+                DEFAULT: '#EAEAEA',
+                muted: '#A3A3A3',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              display: ['Cinzel', 'serif'],
+            },
+            backgroundImage: {
+              'fluted-pattern': 'repeating-linear-gradient(90deg, #121212 0px, #121212 20px, #0A0A0A 20px, #0A0A0A 24px)',
+              'fluted-pattern-light': 'repeating-linear-gradient(90deg, #ffffff 0px, #ffffff 20px, #f3f4f6 20px, #f3f4f6 24px)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #0A0A0A;
+        color: #EAEAEA;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      .text-gold-gradient {
+        background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+      .gold-border {
+        border-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728) 1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark text-light antialiased">
+    <div id="root"></div>
+  </body>
+</html>
